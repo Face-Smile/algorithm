@@ -1,6 +1,6 @@
 package algorithme.p493.reversePairs;
 
-import java.util.Arrays;
+import java.util.*;
 
 //给定一个数组 nums ，如果 i < j 且 nums[i] > 2*nums[j] 我们就将 (i, j) 称作一个重要翻转对。
 //
@@ -29,12 +29,75 @@ import java.util.Arrays;
 // Related Topics 排序 树状数组 线段树 二分查找 分治算法
 // 👍 171 👎 0
 
+class TreeArray {
+    private int n;
+    private int[] arr;
+
+    public TreeArray(int n) {
+        this.n = n;
+        this.arr = new int[n + 1];
+    }
+
+    private int lowbit(int x) {
+        return x & -x;
+    }
+
+    public void update(int i, int k) {
+        while (i <= n) {
+            this.arr[i] += k;
+            i += lowbit(i);
+        }
+    }
+
+    public int query(int i) {
+        int r = 0;
+        while (i > 0) {
+            r += this.arr[i];
+            i -= lowbit(i);
+        }
+        return r;
+    }
+
+}
+
+
 public class Solution {
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 3, 2, 3, 1};
+        int[] nums = new int[]{2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647};
         System.out.println(new Solution().reversePairs(nums));
         System.out.println(Arrays.toString(nums));
     }
+
+    /**
+     * 翻转对：树状数组+哈希
+     *
+     * @param nums
+     * @return
+     */
+    public int reversePairs(int[] nums) {
+        Set<Long> allNums = new TreeSet<>();
+        for (int num : nums) {
+            allNums.add((long) num);
+            // 大坑，强制转换的优先级要大于算术运算
+            // allNums.add((long) (num * 2)); 会出现数据溢出
+            allNums.add((long) num * 2);
+        }
+        Map<Long, Integer> values = new HashMap<>();
+        int idx = 1;
+        for (Long num : allNums) {
+            values.put(num, idx++);
+        }
+        TreeArray treeArray = new TreeArray(values.size());
+        int res = 0;
+        int right = values.size();
+        for (int num : nums) {
+            int left = values.get((long) num * 2);
+            res += treeArray.query(right) - treeArray.query(left);
+            treeArray.update(values.get((long) num), 1);
+        }
+        return res;
+    }
+
 
     /**
      * 归并排序：对于nums[l...r]分为nums[l...m]和nums[m+1...r],可以发现nums[l...r]翻转对数等于nums[l...m]、nums[m+1...r]、介于nums[l...m]与nums[m+1...r]的翻转对的和
@@ -42,7 +105,7 @@ public class Solution {
      * @param nums
      * @return
      */
-    public int reversePairs(int[] nums) {
+    public int reversePairs2(int[] nums) {
         return mergeSort(nums, 0, nums.length - 1);
     }
 
