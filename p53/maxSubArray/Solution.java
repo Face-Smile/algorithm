@@ -43,7 +43,7 @@ public class Solution {
      * 分治法：
      * lSum: 区间[l, r]之间的以l为左端点的最大字段和，分治法：max(子左区间.lSum, 子左区间的.iSum + 子右区间.lSum)
      * rSum: 区间[l, r]之间的以r为右端点的最大字段和，分治法：max(子右区间.rSum, 子右区间的.iSum + 子左区间.rSum)
-     * mSum: 区间[l, r]之间的最大字段和，分治法：max(子左区间.mSum, 子右区间.lSum, 子左区间的.rSum + 子右区间.lSum)
+     * mSum: 区间[l, r]之间的最大子段和，分治法：max(子左区间.mSum, 子右区间.lSum, 子左区间的.rSum + 子右区间.lSum)
      * iSum: 区间[l, r]之间的总和，分治法：子左区间.iSum + 子右区间.iSum
      */
     public Status getStatusInfo(int[] nums, int l, int r) {
