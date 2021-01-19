@@ -35,7 +35,7 @@
 //
 // Related Topics 回溯算法
 // 👍 715 👎 0
-package algorithme.p51.solveNQueens;
+package algorithm.p51.solveNQueens;
 
 import java.util.*;
 

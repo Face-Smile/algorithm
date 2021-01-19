@@ -1,4 +1,4 @@
-package algorithme.p659.isPossible;
+package algorithm.p659.isPossible;
 
 import java.util.HashMap;
 import java.util.Map;

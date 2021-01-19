@@ -1,4 +1,4 @@
-package algorithme.p34.searchRange;
+package algorithm.p34.searchRange;
 
 import java.util.Arrays;
 

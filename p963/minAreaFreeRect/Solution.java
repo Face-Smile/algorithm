@@ -1,4 +1,4 @@
-package algorithme.p963.minAreaFreeRect;
+package algorithm.p963.minAreaFreeRect;
 
 import java.util.*;
 

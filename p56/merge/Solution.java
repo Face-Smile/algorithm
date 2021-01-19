@@ -26,7 +26,7 @@
 //
 // Related Topics 排序 数组
 // 👍 761 👎 0
-package algorithme.p56.merge;
+package algorithm.p56.merge;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,6 +1,4 @@
-package algorithme.p164.maximumGap;
-
-import java.util.Arrays;
+package algorithm.p164.maximumGap;
 
 public class Solution {
     public static void main(String[] args) {

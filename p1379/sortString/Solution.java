@@ -1,4 +1,4 @@
-package algorithme.p1379.sortString;
+package algorithm.p1379.sortString;
 
 public class Solution {
     public static void main(String[] args) {

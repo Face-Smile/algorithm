@@ -33,7 +33,7 @@
 //
 // Related Topics 回溯算法
 // 👍 222 👎 0
-package algorithme.p52.totalNQueens;
+package algorithm.p52.totalNQueens;
 
 public class Solution {
     public static void main(String[] args) {

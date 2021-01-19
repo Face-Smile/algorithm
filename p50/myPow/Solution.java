@@ -26,7 +26,7 @@
 //
 // Related Topics 数学 二分查找
 // 👍 567 👎 0
-package algorithme.p50.myPow;
+package algorithm.p50.myPow;
 
 public class Solution {
     public static void main(String[] args) {

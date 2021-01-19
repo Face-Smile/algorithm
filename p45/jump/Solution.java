@@ -17,7 +17,7 @@
 // 假设你总是可以到达数组的最后一个位置。
 // Related Topics 贪心算法 数组
 // 👍 784 👎 0
-package algorithme.p45.jump;
+package algorithm.p45.jump;
 
 public class Solution {
     public static void main(String[] args) {

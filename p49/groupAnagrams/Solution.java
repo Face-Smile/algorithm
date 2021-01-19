@@ -19,11 +19,9 @@
 // Related Topics 哈希表 字符串
 // 👍 622 👎 0
 
-package algorithme.p49.groupAnagrams;
+package algorithm.p49.groupAnagrams;
 
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Solution {
     public static void main(String[] args) {

@@ -19,7 +19,7 @@
 //
 // Related Topics 贪心算法 数组
 // 👍 1003 👎 0
-package algorithme.p55.canJump;
+package algorithm.p55.canJump;
 
 public class Solution {
     public static void main(String[] args) {

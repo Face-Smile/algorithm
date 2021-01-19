@@ -1,4 +1,4 @@
-package algorithme.p454.fourSumCount;
+package algorithm.p454.fourSumCount;
 
 import java.util.*;
 

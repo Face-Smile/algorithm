@@ -56,9 +56,7 @@
 //输出: false
 // Related Topics 贪心算法 字符串 动态规划 回溯算法
 // 👍 577 👎 0
-package algorithme.p44.isMatch;
-
-import java.util.Arrays;
+package algorithm.p44.isMatch;
 
 // "aaabbbaabaaaaababaabaaabbabbbbbbbbaabababbabbbaaaaba"
 // "a*******b"

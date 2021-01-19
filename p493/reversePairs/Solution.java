@@ -1,4 +1,4 @@
-package algorithme.p493.reversePairs;
+package algorithm.p493.reversePairs;
 
 import java.util.*;
 

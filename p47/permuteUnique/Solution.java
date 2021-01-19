@@ -29,7 +29,7 @@
 //
 // Related Topics 回溯算法
 // 👍 556 👎 0
-package algorithme.p47.permuteUnique;
+package algorithm.p47.permuteUnique;
 
 import java.util.ArrayList;
 import java.util.Arrays;

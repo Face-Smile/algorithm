@@ -1,4 +1,4 @@
-package algorithme.p42.trap;
+package algorithm.p42.trap;
 
 import java.util.Deque;
 import java.util.LinkedList;

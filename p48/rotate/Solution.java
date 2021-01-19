@@ -1,4 +1,4 @@
-package algorithme.p48.rotate;
+package algorithm.p48.rotate;
 
 import java.util.Arrays;
 

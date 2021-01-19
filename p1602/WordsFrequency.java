@@ -1,4 +1,4 @@
-package algorithme.p1602;
+package algorithm.p1602;
 
 import java.util.HashMap;
 import java.util.Map;

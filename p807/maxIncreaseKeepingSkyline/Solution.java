@@ -1,6 +1,4 @@
-package algorithme.p807.maxIncreaseKeepingSkyline;
-
-import java.util.Arrays;
+package algorithm.p807.maxIncreaseKeepingSkyline;
 
 public class Solution {
     public static void main(String[] args) {

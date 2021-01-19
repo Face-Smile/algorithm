@@ -1,4 +1,4 @@
-package algorithme.p767.reorganizeString;
+package algorithm.p767.reorganizeString;
 
 import java.util.*;
 //给定一个字符串S，检查是否能重新排布其中的字母，使得两相邻的字符不同。

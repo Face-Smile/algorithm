@@ -1,4 +1,4 @@
-package algorithme.p321.maxNumber;
+package algorithm.p321.maxNumber;
 
 import java.util.Arrays;
 

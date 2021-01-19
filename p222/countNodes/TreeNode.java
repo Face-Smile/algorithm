@@ -1,4 +1,4 @@
-package algorithme.p222.countNodes;
+package algorithm.p222.countNodes;
 
 class TreeNode {
     int val;

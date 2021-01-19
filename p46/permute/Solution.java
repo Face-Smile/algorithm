@@ -14,7 +14,7 @@
 //]
 // Related Topics 回溯算法
 // 👍 1055 👎 0
-package algorithme.p46.permute;
+package algorithm.p46.permute;
 
 import java.util.ArrayList;
 import java.util.Arrays;
